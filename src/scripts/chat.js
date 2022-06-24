@@ -1,11 +1,11 @@
 window.onload = function() {
-    var hichat = new HiChat();
-    hichat.init();
+    var chatApp = new Chat();
+    chatApp.init();
 };
-var HiChat = function() {
+var Chat = function() {
     this.socket = null;
 };
-HiChat.prototype = {
+Chat.prototype = {
     init: function() {
         var that = this;
         this.socket = io.connect();
